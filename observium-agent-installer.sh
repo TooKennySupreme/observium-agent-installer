@@ -58,7 +58,8 @@ cp -r /tmp/observium/scripts/agent-local/* /usr/lib/observium_agent/scripts-avai
 ln -s /usr/lib/observium_agent/scripts-available/dpkg /usr/lib/observium_agent/scripts-enabled/dpkg
 ln -s /usr/lib/observium_agent/scripts-available/dmi /usr/lib/observium_agent/scripts-enabled/dmi
 ln -s /usr/lib/observium_agent/scripts-available/lmsensors /usr/lib/observium_agent/scripts-enabled/lmsensors
-ln -s /usr/lib/observium_agent/scripts-available/vmwaretools /usr/lib/observium_agent/scripts-enabled/vmwaretools
+# ln -s /usr/lib/observium_agent/scripts-available/vmwaretools /usr/lib/observium_agent/scripts-enabled/vmwaretools
+ln -s /usr/lib/observium_agent/scripts-available/apache  /usr/lib/observium_agent/scripts-enabled/apache
 
 # Add SNMP community to SNMPd config
 echo "rocommunity $OBSERVIUM_DEFAULT_SNMPV2C_COMMUNITY" >> /etc/snmp/snmpd.conf
